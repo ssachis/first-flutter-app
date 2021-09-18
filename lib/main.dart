@@ -15,13 +15,13 @@ class Home extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(200.0),
+            // padding: EdgeInsets.all(2.0),
             //color: Colors.cyan,
             child: Image.asset(
-              'assets/i.jpg',
+              'assets/kk.jpg',
               width: 100,
               height: 70,
             ),
@@ -29,15 +29,19 @@ class Home extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(30.0),
             // color: Colors.pink,
-            child: Text('Ada lovelace',
-            style: TextStyle(fontStyle: FontStyle.italic),),
+            child: Center(
+              child: Text(
+                'Ada lovelace',
+                style: TextStyle(fontStyle: FontStyle.italic),
+              ),
+            ),
           ),
           Container(
-            padding: EdgeInsets.all(40.0),
+            padding: EdgeInsets.all(4.0),
             // color: Colors.amber,
-            child: Text('github username:ADA12'),
-
-            TextStyle
+            child: Center(
+              child: Text('github username:ADA12'),
+            ),
           ),
         ],
       ),
